@@ -1,0 +1,58 @@
+body{
+    background-color: rgb(237, 118, 0);
+    font-size: Arial, sans-serif;
+    font-size: 20px ;
+    color: rgb(237, 32, 0);
+    text-align: center;
+}
+.small-image{
+    float: left;
+    margin: 10px;
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: 5px;
+    border: 5px solid black;
+}
+
+
+.cuadrado{
+    width: 300px;
+    height: auto;
+    float: right;
+    margin-top: 10px;
+    margin-right: 20px ;
+    border: 2px solid blue
+}
+@keyframes degradado{
+    0% {
+        color: blue;
+    }
+    25%{
+        color: crimson;
+    }
+    75%{
+        color: crimson;
+    }
+    100%{
+        color: blue;
+    }
+}
+
+
+@keyframes desplazar{
+    0%{
+        opacity: 0;
+        transform: translateY(-20p);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}  
+body >* {
+    animation: desplazar 3s ease-out forwards;
+}
+h1{
+    animation: degradado 3s infinite;
+}
